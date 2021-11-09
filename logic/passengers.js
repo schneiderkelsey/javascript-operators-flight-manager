@@ -1,7 +1,7 @@
 function Passengers() {
     function checkFlightCapacity(capacity, passengers) {
         let numPassengers = 0; 
-        for (let i = 0; i < passenfers.length; i++) {
+        for (let i = 0; i < passengers.length; i++) {
             numPassengers += passengers[i];
         }
    //If the total number of passengers is less than the capacity of the flight, return it. 
