@@ -12,7 +12,8 @@ function Flights() {
                 "The capacity of the flight must be a positive integer value"
                 );
         } 
-        return Math.cell(numPassengers / capacity);
+        
+        return Math.ceil(numPassengers / capacity);
     }
 
     function checkAircraftRevision(distanceLimit, distances) {
