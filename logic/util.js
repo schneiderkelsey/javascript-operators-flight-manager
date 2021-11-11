@@ -1,21 +1,25 @@
 function Util() {
-    function calculateTotalDistributedPassengers(distributePassengers) {
+
+    function calculateTotalDistributedPassengers(distributedPassengers) {
         let totalDistributedPassengers = 0;
-        let value; 
-        for (value in distributedPassengers) { 
-            totalDistributedPassengers += distributedPassengers[value];
+        let value;
+        for (value in distributedPassengers) {
+           totalDistributedPassengers += distributedPassengers[value];
         }
         return totalDistributedPassengers;
-    }
-    function calculateTotalNumberOfPassengers(passengersArray) { 
+     }
+
+     function calculateTotalNumberOfPassengers(passengersArray) {
         let totalNumberOfPassengers = 0;
         let passengers;
         for (passengers of passengersArray) {
-            totalNumberOfPassengers += passengers;
+           totalNumberOfPassengers += passengers;
         }
         return totalNumberOfPassengers;
-    }
-    return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers}; 
-}
-module.exports = Util();
+     }
 
+     return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers};
+
+}
+
+module.exports = Util();
